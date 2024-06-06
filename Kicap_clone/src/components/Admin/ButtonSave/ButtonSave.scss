@@ -1,0 +1,23 @@
+.admin {
+  .button-save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.6rem;
+    padding: 10px 16px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 4px;
+    transition: all 0.2s linear;
+
+    &:disabled {
+      opacity: 0.3 !important;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.form-search {
+  position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  overflow: hidden;
+  z-index: 9999;
+  transition: all 0.2s;
+
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+
+    & > input {
+      flex: 1;
+    }
+
+    .form-control {
+      width: unset;
+      padding: 0 20px;
+      border: none;
+      line-height: 23px;
+      letter-spacing: 0.25px;
+      font-weight: 300;
+      font-size: 1.6rem;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s linear;
+
+      &:focus {
+        border-color: var(--black);
+      }
+    }
+
+    &-search {
+      button {
+        padding: 12px;
+      }
+      img {
+        width: 16px;
+      }
+    }
+  }
+
+  .close-search {
+    position: absolute;
+    right: 20px;
+
+    svg {
+      color: var(--black);
+      font-size: 2.6rem;
+    }
+  }
+
+  &.active {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .input-group {
+    justify-content: center !important;
+
+    & > input {
+      flex: unset !important;
+    }
+  }
+}

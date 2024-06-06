@@ -1,0 +1,29 @@
+.hero_slider {
+  max-width: 1680px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+
+  & .swiper-pagination-horizontal {
+    bottom: 15px;
+  }
+
+  & .swiper-pagination-bullet {
+    background-color: #fff;
+    width: 7px;
+    height: 7px;
+  }
+  & .swiper-pagination-bullet-active {
+    transition: all 0.2s ease-in-out;
+    background-color: #c9d6df;
+    width: 20px;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .swiper-pagination-bullet {
+    margin: 0 3px !important;
+  }
+}

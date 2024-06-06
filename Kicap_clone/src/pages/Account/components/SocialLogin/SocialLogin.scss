@@ -1,0 +1,16 @@
+.social-login {
+  margin-bottom: 10px;
+  & > a {
+    display: inline-block;
+  }
+  &--facebook,
+  &--googleplus {
+    img {
+      width: 130px;
+    }
+  }
+
+  &--googleplus {
+    margin-left: 15px;
+  }
+}
